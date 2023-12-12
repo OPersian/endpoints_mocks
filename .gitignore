@@ -1,0 +1,15 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+build
+node_modules
+
+# Distribution / packaging
+.idea
+.vscode/*
+!.vscode/snippets
+!.vscode/launch.json
+!.vscode/settings.json
+
+# OSes
+.DS_Store
