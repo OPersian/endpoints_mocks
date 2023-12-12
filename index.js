@@ -108,12 +108,16 @@ app.get('user?user_id=emplemplidid1&notifications=0', (req, res) => {
 
 
 // Initial to-dos
+// let todos = [
+//   { id: Date.now() - 2, text: 'Refresh React knowledge', completed: false },
+//   { id: Date.now() - 1, text: 'Read a book', completed: true },
+//   { id: Date.now(), text: 'Write a blog post', completed: false }
+// ];
 let todos = [
-  { id: Date.now() - 2, text: 'Refresh React knowledge', completed: false },
-  { id: Date.now() - 1, text: 'Read a book', completed: true },
-  { id: Date.now(), text: 'Write a blog post', completed: false }
+  { id: 1, title: 'Refresh React knowledge', isCompleted: false, creationDate: Date.now() },
+  { id: 2, title: 'Read a book', isCompleted: true, creationDate: Date.now() + 1},
+  { id: 3, title: 'Write a blog post', isCompleted: false, creationDate: Date.now() + 2 }
 ];
-
 
 // GET - Read all items
 app.get('/todos', (req, res) => {
